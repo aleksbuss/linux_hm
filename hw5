@@ -1,0 +1,115 @@
+#!/bin/bash
+for run in {1..10}
+do
+date +"%T"
+sleep 5
+done
+echo $run
+cat /etc/os-release
+echo " "
+cat /etc/os-release | head -1 | cut -c7-12
+for new in {50..100}
+do
+touch sleeper1_$new.txt
+done
+
+
+
+
+$ ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+Last login: Sat Dec  3 20:14:29 2022 from 80.255.2.68
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/43_44_morning/alex
+[ec2-user@ip-172-31-33-20 alex]$ ./sleeper.sh
+20:24:31
+20:24:31
+20:24:31
+20:24:31
+20:24:31
+20:24:31
+20:24:31
+20:24:32
+20:24:32
+20:24:32
+10
+NAME="Amazon Linux"
+VERSION="2"
+ID="amzn"
+ID_LIKE="centos rhel fedora"
+VERSION_ID="2"
+PRETTY_NAME="Amazon Linux 2"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2"
+HOME_URL="https://amazonlinux.com/"
+
+Amazon
+[ec2-user@ip-172-31-33-20 alex]$ ls -lah
+total 16K
+drwxrwxr-x  2 ec2-user ec2-user 4.0K Dec  3 20:24 .
+drwxrwxr-x 24 ec2-user ec2-user 4.0K Nov 30 08:03 ..
+-rwxrwxr-x  1 ec2-user ec2-user   93 Nov 28 13:26 script.sh
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_100.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_50.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_51.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_52.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_53.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_54.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_55.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_56.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_57.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_58.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_59.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_60.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_61.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_62.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_63.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_64.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_65.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_66.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_67.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_68.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_69.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_70.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_71.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_72.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_73.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_74.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_75.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_76.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_77.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_78.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_79.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_80.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_81.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_82.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_83.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_84.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_85.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_86.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_87.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_88.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_89.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_90.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_91.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_92.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_93.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_94.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_95.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_96.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_97.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_98.txt
+-rw-rw-r--  1 ec2-user ec2-user    0 Dec  3 20:24 sleeper1_99.txt
+-rwxr--r--  1 ec2-user ec2-user  195 Dec  3 20:18 sleeper.sh
+[ec2-user@ip-172-31-33-20 alex]$ rm sleeper1_*
+[ec2-user@ip-172-31-33-20 alex]$ ls -lah
+total 12K
+drwxrwxr-x  2 ec2-user ec2-user   41 Dec  3 20:25 .
+drwxrwxr-x 24 ec2-user ec2-user 4.0K Nov 30 08:03 ..
+-rwxrwxr-x  1 ec2-user ec2-user   93 Nov 28 13:26 script.sh
+-rwxr--r--  1 ec2-user ec2-user  195 Dec  3 20:18 sleeper.sh
+[ec2-user@ip-172-31-33-20 alex]$
