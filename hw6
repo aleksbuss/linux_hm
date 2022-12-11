@@ -1,0 +1,50 @@
+#!/bin/bash
+for run in {1..10}
+do
+DATE=$(date +"%H_%M_%S")
+echo $run
+echo $DATE
+touch $run'_'$DATE
+
+done
+
+chmod +x ./hw1.sh
+
+*/15 * * * * /opt/43_44_morning/alex/hw1.sh
+
+
+$ ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+Last login: Sun Dec 11 17:50:08 2022 from dynamic-077-009-039-140.77.9.pool.telefonica.de
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+34 package(s) needed for security, out of 41 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-33-20 ~]$
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/43_44_morning/alex/
+[ec2-user@ip-172-31-33-20 alex]$ nano /opt/43_44_morning/alex/hw1.sh
+[ec2-user@ip-172-31-33-20 alex]$ ./hw1.sh
+1
+18_12_40
+2
+18_12_40
+3
+18_12_40
+4
+18_12_40
+5
+18_12_40
+6
+18_12_40
+7
+18_12_40
+8
+18_12_40
+9
+18_12_40
+10
+18_12_40
+[ec2-user@ip-172-31-33-20 alex]$
